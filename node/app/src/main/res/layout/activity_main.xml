@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/phone_name"
+        android:layout_width="123dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/phone_name"
+        android:textSize="20px"
+        app:layout_constraintBottom_toTopOf="@+id/et_phone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:inputType="phone"
+        android:lines="5"
+        app:layout_constraintBottom_toTopOf="@+id/tv_context"
+        app:layout_constraintTop_toBottomOf="@+id/phone_name"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/tv_context"
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:text="请输入内容"
+        android:textColor="#ff0000"
+        android:textSize="20px"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/et_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@+id/tv_context"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <Button
+        android:id="@+id/fasong"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="29dp"
+        android:text="发送"
+        app:layout_constraintTop_toBottomOf="@+id/et_context"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
